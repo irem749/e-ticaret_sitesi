@@ -1,0 +1,199 @@
+.navbar {
+    background: #284264 !important;
+}
+
+.bg-dark {
+    background: #fff !important;
+}
+
+.btn-light:hover i {
+    color: #f3f3f3
+}
+
+.slider {
+    &__nav {
+        max-height: 250px;
+        object-fit: cover;
+    }
+}
+
+.card .img-wrap {
+    height: 240;
+}
+
+.img-wrap {
+    position: relative;
+    display: block;
+    padding: 1rem;
+    text-align: center;
+}
+
+.card .img-wrap img {
+    height: 100%;
+    width: auto;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.card .badge {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.card .title {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+
+.card .info-wrap {
+    padding: 1rem 1.2rem;
+}
+
+.btn-icon {
+    width: 2.5rem;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.breadcrumb a {
+    color: #fff;
+    opacity: .75;
+}
+
+.breadcrumb .breadcrumb-item {
+    color: #fff;
+}
+
+.gallery-wrap .img-big-wrap {
+    display: block;
+    width: 100%;
+    height: 400px;
+    margin-bottom: 1rem;
+    text-align: center;
+    background-color: #fff;
+}
+
+.gallery-wrap .img-big-wrap a {
+    display: block;
+    height: 100%;
+    text-align: center;
+
+}
+
+.gallery-wrap .thumbs-wrap {
+    text-align: center;
+}
+
+.gallery-wrap .thumbs-wrap a {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #dde2e6;
+    border-radius: 0.4rem;
+    margin: 3px;
+    display: inline-block;
+    overflow: hidden;
+
+}
+
+.gallery-wrap .thumbs-wrap img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    cursor: zoom-in;
+}
+
+.checked {
+    color: white;
+}
+
+.girisyap {
+    margin: auto;
+
+}
+
+.girisyapsection {
+    background-image: url();
+    width: 100%;
+    min-height: 500px;
+    background-size: cover;
+    background-position: auto;
+    margin-top: -10px;
+
+}
+
+.girisyapform {
+    position: relative;
+    top: 50px;
+}
+
+.footer {
+    background-color: #284264;
+}
+
+.section {
+    background-color: #fff;
+}
+
+.review .box-container .box {
+    border: var(--border);
+    text-align: left;
+    padding: 2rem 2rem;
+    background-color: #fff;
+    border-radius: 1rem;
+}
+
+.review .box-container .box .user {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+
+.review .box-container .box .stars {
+    font-size: 1.5rem;
+    color: gold;
+
+
+}
+
+.slider .box-container .list-group {
+    background-color: #085e7d;
+}
+
+.container.container.row {
+    background-color: #085e7d;
+}
+
+.left-container {
+    background-color: #f8f9fa;
+    /* Sol container arka plan rengi */
+    height: 150px;
+
+    /* Ekran yüksekliğine kadar genişlet */
+    position: fixed;
+    /* Sayfayı sürüklediğinizde sabit kalsın */
+    left: 0;
+    /* Sayfanın soluna yerleştir */
+    top: 100px;
+    /* Sayfanın üstüne yerleştir */
+    width: 325px;
+    /* Sabit genişlik */
+    padding: 20px;
+}
+
+.dropdown {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 185px;
+    margin: 15px 0 0 0
+}
+
+.horizontal-line {
+    border-top: 1px solid #000;
+    /* Çizgi rengi ve kalınlığı */
+    margin: 20px 0;
+}

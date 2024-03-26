@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Clock</title>
+
+<body>
+    <input type="button" value="buton" onclick="say()">
+    <div id="say"></div>
+    <script>
+        function say() {
+            var sayac = 0;
+            sayac++;
+            var say = document.getElementById("say");
+            say.textContent = sayac + "kez tıklandı";
+
+
+        }
+    </script>
+
+
+</body>
+
+</html>
+
+
+
+<!--
+    <h3>BASİT HESAP MAKİNESİ</h3>
+
+    <input type="text" id="sayi1" placeholder="sayi1"><br>
+    <input type="text" id="sayi2" placeholder="sayi2">
+
+    <p>İŞLEM SEÇİNİZ.</p>
+
+    <input type="radio" id="topla" value="topla" name="islem">toplama <br>
+    <input type="radio" id="cikarma" value="cikarma" name="islem">çıkarma <br>
+    <input type="radio" id="carpma" value="carpma" name="islem">çarpma <br>
+    <input type="radio" id="bölme" value="bölme" name="islem">bölme <br>
+    <button onclick="hesapla()">hesapla</button>
+    <input type="text" id="sonuc" placeholder="sonuc" readonly></input>
+
+    <scrip>
+        function hesapla() {
+            
+            var sayi1 = parseFloat(document.getElementById("sayi1").value);
+            var sayi2 = parseFloat(document.getElementById("sayi2").value);
+            var islem = document.querySelector('input[name="islem"]:checked').value;
+            if (!islem) {
+                alert("Lütfen işlem seçiniz.");
+                return;
+            }
+            if (isNaN(sayi1)) {
+                alert("Lütfen birinci sayıyı girin.");
+                return;
+            }
+            if (isNaN(sayi2)) {
+                alert("Lütfen ikinci sayıyı girin.");
+                return;
+            }
+
+            var result = 0;
+
+            switch (islem) {
+
+                case "topla":
+                    result = sayi1 + sayi2;
+                    break;
+                case "cikarma":
+                    result = sayi1 - sayi2;
+                    break;
+                case "carpma":
+                    result = sayi1 * sayi2;
+                    break;
+                case "bölme":
+                    if (sayi2 === 0) {
+                        alert("Bir sayı sıfıra bölünemez. Lütfen başka bir sayı girin.");
+                        return;
+                    }
+                    result = sayi1 / sayi2;
+                    break;
+                default: arguments
+                    break;
+
+
+            }
+            document.getElementById("sonuc").value = result;
+        }
+
+
+    </scrip>
+    ------------------------------------------
+     isim:<input type="text" id="isim"> <br>
+    Bilet Numarası:<input type="text" id="no"> <br>
+    <button onclick="tahminEt()">tahmin et</button>
+    <script>
+        function tahminEt() {
+            var isim = document.getElementById("isim").value;
+            var no = document.getElementById("no").value;
+            var noString = no.toString();
+            if (!isim) {
+                alert("lütfen isim giriniz");
+            }
+            if (!no) {
+                alert("lütfen bilet numarası giriniz");
+            }
+            if (noString.length === 7) {
+                alert(isim + "doğru numara");
+
+            } else {
+                alert(isim + "yeniden deneyiniz!");
+            }
+
+
+
+
+        }
+    </scrip>
+    ------------------------------
+    <table border="1" width="50%">
+        <tr>
+            <td colspan="5">Alış Veriş Tablosu</td>
+        </tr>
+        <tr>
+            <td colspan="2">Tür</td>
+            <td>Ürün</td>
+            <td>Fiyat</td>
+            <td>İndirim Oranı</td>
+        </tr>
+
+        <tr>
+            <td rowspan="5" colspan="2">Beyaz Eşya</td>
+            <td>buzdolabı</td>
+            <td>1.750</td>
+            <td rowspan="3">%25</td>
+        </tr>
+        <tr>
+            <td>fırın</td>
+            <td>650</td>
+        </tr>
+        <tr>
+            <td>çamaşır makinesi</td>
+            <td>1.100</td>
+        </tr>
+        <tr>
+            <td>bulaşık makinesi</td>
+            <td>75</td>
+            <td rowspan="2">%35</td>
+        </tr>
+        <tr>
+            <td>dondurucu</td>
+            <td>600</td>
+        </tr>
+        <tr>
+            <td rowspan="2" colspan="2">küçük ev aletleri</td>
+            <td>mikser</td>
+            <td>138</td>
+            <td rowspan="2">%10</td>
+        </tr>
+        <tr>
+            <td>saç kurutma</td>
+            <td>151</td>
+        </tr>
+    </table>
+
+-----------------------------------------------
+ <table border="">
+        <tr>
+            <td><button class="button" onmouseover="gel(this)" onmouseout="git(this)">menuA</button></td>
+            <td><button class="button" onmouseover="gel(this)" onmouseout="git(this)">menuB</button></td>
+            <td><button class="button" onmouseover="gel(this)" onmouseout="git(this)">menuC</button></td>
+            <td><button class="button" onmouseover="gel(this)" onmouseout="git(this)">menuD</button></td>
+        </tr>
+
+    </table>
+    <script>
+        function gel(button) {
+            button.style.backgroundColor = 'yellow';
+            
+        }
+        function git(button) {
+            button.style.backgroundColor = "pink";
+            
+        }
+    </scrip>
+
+---------------------------
+<div>
+        <form>
+            Adı-Soyadı <input type="text"> <br>
+            Email <input type="email" name="" id=""><br>
+            Cinsiyet <input type="radio" name="cinsiyet" id="">Bay
+            <input type="radio" name="cinsiyet" id="">Bayan<br>
+            Mesleğiniz
+            <select name="" id="">
+                <option value=""></option>
+            </select><br>
+
+            <button type="submit">Gönder</button>
+            <button type="submit">Temizle</button>
+
+        </form>
+    </div>
+-----------------------
+<h1>Kar 1</h1>
+    <img id="demo" src=“karparcasi.png“ style="position:fixed;top:10%;" />
+    <script>
+        var myTimer = setInterval("myFunction()", 1000);
+        function myFunction() {
+            var obj = document.getElementById("demo");
+            var top = parseInt(obj.style.top) + 1;
+            obj.style.top = top + "%";
+            if (top > 50) clearInterval(myTimer);
+        }
+    </>
+-------------------------
+<img id="myimage" onclick="resimGuncellestir()" src="pic_bulboff.gif" width="100" height="180">
+    <p>Tıklama lambayı açılıp kapatacak</p>
+
+    <script>
+        function resimGuncellestir() {
+            var element = document.getElementById("myimage");
+            if (element.src.match("bulbon")) {
+                element.src = "pic_bulboff.gif";
+            }
+            else {
+                element.src = "pic_bulbon.gif";
+            }
+        }
+    </script>
+    -----------------------------------
+    <h3>cinsiyet seç</h3>
+
+    <input type="radio" name="sec" id="cinsiyet" value="kadin">kadın<br>
+    <input type="radio" name="sec" id="cinsiyet" value="erkek"> erkek<br>
+
+    <select name="sec" id="yas">
+        <option value="1">0-18</option>
+        <option value="2">19-30</option>
+        <option value="3">31-40</option>
+        <option value="4">41-50</option>
+        <option value="5">50+</option>
+    </select>
+    <button type="button" onclick="bul()">Gönder</button>
+    <script>
+        function bul() {
+            if (document.getElementById("cinsiyet").value === "kadin" && document.getElementById("yas").value === "5") {
+                window.alert("50 yaş kadın için riskli");
+            }
+            else
+                window.alert("gönderildi");
+
+        }
+
+    </script>
+    -------------------------------------
+    <p id="demo">JavaScript kullanarak elemanın stilinin değiştirilmesi</p>
+    <button onclick="myFunction()">click me!</button>
+
+
+
+    <script>
+        function myFunction() {
+            var buton = document.getElementById("demo").style;
+            buton.color = 'red';
+            buton.fontSize = '25px';
+
+        }
+    </script>
+    -----------------
+    <table border="1">
+        <tr>
+            <td>bölüm</td>
+            <td>no</td>
+            <td>adı soyadı</td>
+        </tr>
+        <tr>
+            <td rowspan="2">bilgisyar</td>
+            <td>2053212</td>
+            <td>ali</td>
+        </tr>
+        <tr>
+            <td>264564</td>
+            <td>ayşe</td>
+        </tr>
+        <tr>
+            <td>yazılım</td>
+            <td>123145</td>
+            <td>veli</td>
+        </tr>
+    </table>
+    ------------------------------
+
+-->
